@@ -1,0 +1,17 @@
+My Associate Id:
+845067
+Other team members:
+844994,845164,845114
+Team Lead:
+845114
+My Role in team:
+1.contact us page
+My development files
+1.contactpage.html
+2.contactpage.js
+I was strong in:
+1.Html
+2.Css
+I was Weak in:JavaScript Validations
+
+

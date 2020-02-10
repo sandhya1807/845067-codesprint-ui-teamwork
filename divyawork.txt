@@ -1,0 +1,18 @@
+My Associate Id:
+844994
+Other team members:
+845114,845164,845067
+Team Lead:
+845114
+My Role in team:
+1.placeorder page and javascript validations
+My development files
+1.placeorder.html
+2.additems.js
+I was strong in:
+1.Html
+2.Css
+I was Weak in :
+bootstrap
+
+

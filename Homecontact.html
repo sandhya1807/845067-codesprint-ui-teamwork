@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <script src="contactscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: black;
+        }
+
+        .nav.navbar-nav.navbar-text li a {
+            color: white;
+        }
+
+
+        @keyframes blinkingText {
+            0% {
+                color: #000;
+            }
+
+            49% {
+                color: #000;
+            }
+
+            60% {
+                color: transparent;
+            }
+
+            99% {
+                color: transparent;
+            }
+
+            100% {
+                color: #000;
+            }
+        }
+
+       
+
+        .row.content {
+            height: 100px;
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            height: 100%;
+            width: 120px;
+            position: absolute;
+            /*z-index: 1;
+            left: 0;*/
+            color: white;
+            background-color: black;
+            /*overflow-x: hidden;*/
+            padding-top: 20px;
+        }
+
+
+        .icon-bar {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-bottom: 10px;
+        }
+
+
+        #bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://thumbs.dreamstime.com/b/gold-gift-box-black-background-festive-background-gold-gift-box-gold-ribbon-bow-black-background-flat-lay-top-167623046.jpg")
+        }
+
+        .nav.navbar-nav.navbar-right li a {
+            color: white;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width:767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+                position:fixed;
+            }
+
+            .rowcontent {
+                height: auto;
+            }
+        }
+
+        blink {
+            animation: blinkingText 1.2s infinite;
+        }
+
+        @keyframes blinkingText {
+            0% {
+                color: green;
+            }
+
+            49% {
+                color: darkseagreen;
+            }
+
+            60% {
+                color: transparent;
+            }
+
+            99% {
+                color: transparent;
+            }
+
+            100% {
+                color: green;
+            }
+        }
+
+        #left {
+            float: left;
+            width: 20%;
+            overflow: hidden;
+        }
+
+        #right {
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container {
+            border-radius: 50px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        h1 {
+            color: black;
+            align-content: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .i1 {
+            height: 100px;
+            width: 100px;
+        }
+        #contact {
+            width:500px;
+        }
+            
+        
+        
+
+
+    </style>
+
+
+
+</head>
+<body id="bgimg">
+    <div class="icon-bar">
+        <img src="logo22.png" class="img-circle" alt="Cinque Terre" width="100" height="90">
+        <img src="Capture1.PNG" alt="Cinque Terre" align="middle" hspace="60" width="100" height="90">
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-text">
+                    <li class="active"><a href="Home.html">Home</a></li>
+                    <li><a href="HomePlace.html">PalceOrder</a></li>
+                    <li><a href="HomeView.html">ViewOrder</a></li>
+                    <li><a href="Homecontact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="row content">
+            <div class="sidenav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="HomePlace.html">PlaceOrder</a></li>
+                    <li><a href="HomeView.html">ViewOrder</a></li>
+                    <li><a href="Homecontact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="container" id="contact" >
+                
+                    <h1>Get In Touch</h1>
+                
+                <!--<div id="left">-->
+                <!--<form action="" name="myForm" onsubmit=" return check()" method="post">-->
+                <!--<div class="row">
+                    <div class="col-25">
+                        <h3>DivyaSree</h3>
+                        <a href="#">divya@outlook.com</a><hr />
+                        <h3>Hamsitha</h3>
+                        <a href="#">hamsitha@outlook.com</a><hr />
+                        <h3>Kalyani</h3>
+                        <a href="#">kalayni@outlook.com</a><hr />
+                        <h3>Sandhya</h3>
+                        <a href="#">sandhya@outlook.com</a><hr />
+                    </div>
+                </div>-->
+                <!--</div>-->
+                <!--<div style="top:20%;right:100px" id="right">-->
+                <form action="" name="myForm" onsubmit=" return check()" method="post" >
+                    <div class="row">
+                        <div class="col-75">
+                            <label for="fname">Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Email" name="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Message</label>
+                        </div>
+                        <div class="col-50">
+                            <textarea id="subject" name="subject" placeholder="Leave A Message" style="height:100px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-75">
+                        <button type="submit" value="Submit">Submit</button>
+                    </div>
+                </form>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
